@@ -1,9 +1,12 @@
-def myfunction1(n):
-    if (n > 0):   
+def myfunction(n):
+    if n <= 0:  
         return
-    for i in range(0, n + 1):  
+    for i in range(0, int(n) + 1):  
         print("Codingal")
-    myfunction1(n / 2)  
-    myfunction1(n / 3)  
+    myfunction(n // 2)  
+    myfunction(n // 3)  
 
-myfunction1(4)
+myfunction(4)
+
+for i in range(0, 5):
+    print(i)
